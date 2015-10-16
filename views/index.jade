@@ -1,10 +1,10 @@
 extends layout
 
 block content
-  div.section
+  div.section#tasks
     div.header
       h1 Tasks
-    div#accordion
+    div#accordion.catalog
       h3 Health
       div
         ul
@@ -24,6 +24,9 @@ block content
           li List item two
           li List item three
 
-  div.section
+  div.section#plan
     div.header
       h1 Daily Plan
+      .ui-widget-content
+        ol
+          li.placeholder Add your tasks here
