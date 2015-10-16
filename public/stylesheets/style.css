@@ -1,8 +1,45 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Indie Flower", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.section {
+  height: 50%;
+  background-color: #F9F9F9;
+}
+
+.header {
+  background-color: #4B4B4B;
+  color: white;
+  font-size: 1.5em;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 5px;
+}
+
+h1 {
+  padding: 10px 0 10px 30px;
+}
+
+#accordion {
+  margin-top: -30px;
+}
+
+#accordion .ui-accordion-header {
+  background: white;
+}
+
+#accordion .ui-accordion-content {
+  background: #F9F9F9;
+  font: 1.2em "Indie Flower", Helvetica, Arial, sans-serif;
+}
+
+#accordion h3 {
+  color: #89AF37;
+  border-radius: 0;
+  background-color: white;
+  font: 1.5em "Indie Flower", Helvetica, Arial, sans-serif;
 }
