@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $( "#accordion" ).accordion();
-  $( ".catalog" ).accordion();
-  $( ".catalog li" ).draggable({
+  $( ".categories" ).accordion();
+  $( ".categories li" ).draggable({
     appendTo: "body",
     helper: "clone"
   });

@@ -4,26 +4,26 @@ block content
   div.section#tasks
     div.header
       h1 Tasks
-    div#accordion.catalog
-      h3 Health
-      div
-        ul
-          li List item one
-          li List item two
-          li List item three
-      h3 Wealth
-      div
-        ul
-          li List item one
-          li List item two
-          li List item three
-      h3 Soul
-      div
-        ul
-          li List item one
-          li List item two
-          li List item three
-
+    div#accordion.categories
+      if tasks
+        h3 Health
+        div
+          ul
+            for task in tasks
+              if task.category === "Health"
+                li=task.description
+        h3 Wealth
+        div
+          ul
+            for task in tasks
+              if task.category === "Wealth"
+                li=task.description
+        h3 Soul
+        div
+          ul
+            for task in tasks
+              if task.category === "Soul"
+                li=task.description
   div.section#plan
     div.header
       h1 Daily Plan
